@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <table *ngIf="employees">
+        <thead>
+            <tr>
+                <th colspan="2">Employee Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Employee Code:</td>
+                <td>{{employees.code}}</td>
+            </tr>
+            <tr>
+                <td>Employee Name:</td>
+                <td>{{employees.name}}</td>
+            </tr>
+            <tr>
+                <td>Employee Salary:</td>
+                <td>{{employees.annualsalary| currency:'USD':true:'1.3-3'}}</td>
+            </tr>
+            <tr>
+                <td>Employee Gender:</td>
+                <td>{{employees.gender}}</td>
+            </tr>
+            <tr>
+                <td>Employee DOJ:</td>
+                <td>{{employees.dateofjoining}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div *ngIf="!employees">
+        <h2>{{CustomError}}</h2> 
+    </div>
+
+    <div style="margin-top:5px">
+        <input type="button" class="btn btn-primary" (click)="OnBackButtonClick()" value="Click to go back to List of Employees"/>
+    </div>
+    <!--<br />
+    <button (click)="toggleDetails()">{{showDetails?'Hide':'Show'}} Details</button>-->
+
+</body>
+</html>

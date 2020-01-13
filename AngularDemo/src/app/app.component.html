@@ -1,0 +1,52 @@
+﻿<!--<h1>Hello {{name}}</h1>
+<div>
+    <h1>{{PageHeader?PageHeader:'No header'}}</h1>
+    <emp-apps></emp-apps>
+    <br />
+    <emp-list></emp-list>
+
+    <br /><br />
+    <test-demo></test-demo>
+
+    <br /><br />
+
+    <empWebApi-list></empWebApi-list>
+</div>-->
+<!--<div style="padding:5px">
+    <ul class="nav nav-tabs">
+        <li><a routerLink="home">Home</a></li>|
+        <li><a routerLink="employee">Employee</a></li>
+    </ul>
+
+    <router-outlet></router-outlet>
+
+</div>-->
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <div>
+        <ul class="nav nav-tabs">
+            <li>
+                <a routerLink="home">Home</a>
+            </li>
+            <li>
+                <a routerLink="employee">Employee</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</body>
+
+
+
